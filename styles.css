@@ -1,0 +1,73 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    background: url('images/backcover.jpg');
+    background-size: cover;
+    flex-direction: column;
+    
+
+    
+}
+
+
+input{
+    text-align: center;
+    margin: 0 auto;
+}
+
+
+
+footer{
+    background-color: rgba(0,0,0,0.5);
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+    color:white;
+}
+
+/* Clear Sky Animation */
+@keyframes clearSky {
+    from {background-position: 0 0;}
+    to {background-position: 100% 100%;}
+}
+
+.clear-sky {
+    background-image: url('images/clear-sky.gif'); /* Use animated GIFs or video */
+    animation: clearSky n infinite;
+    background-size: cover;
+}
+
+/* Cloudy Animation */
+@keyframes cloudySky {
+    from {background-position: 0 0;}
+    to {background-position: -100% -100%;}
+}
+
+.cloudy {
+    background-image: url('images/cloudy.gif'); /* Use animated GIFs or video */
+    animation: cloudySky infinite;
+    background-size: cover;
+}
+
+/* Rainy Animation */
+@keyframes rainySky {
+    from {background-position: 0 0;}
+    to {background-position: 100% 50%;}
+}
+
+.rainy {
+    background-image: url('images/Rainy.webp'); /* Use animated GIFs or video */
+    animation: rainySky infinite;
+    background-size: cover;
+}
+
+/* Snowy Animation */
+.snowy {
+    background-image: url('images/snow2.webp'); /* Use animated GIFs or video */
+    animation: snowySky  infinite;
+    background-size: cover;
+}
+
